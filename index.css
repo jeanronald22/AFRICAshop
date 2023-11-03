@@ -143,6 +143,10 @@ footer ul li span{
 }
 /*responsive*/
 @media (max-width:450px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
     nav{
         display: flex;
         flex-direction: column;
@@ -166,6 +170,7 @@ footer ul li span{
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin: 0px;
 
     }
     .sction1 ul{
@@ -188,7 +193,11 @@ footer ul li span{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        margin: 0px;
+        margin-left: 0px;
+
+    }
+    footer{
+        padding: 0px;
     }
     footer ul{
         display: flex;
