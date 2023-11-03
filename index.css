@@ -188,10 +188,14 @@ footer ul li span{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        margin-left: 30px;
+        margin: 0px;
     }
     footer ul{
         display: flex;
         flex-direction: column;
+    }
+    .tenis{
+        width: 100%;
+        padding: 3px;
     }
 }
