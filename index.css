@@ -1,0 +1,197 @@
+
+/*style de la barre de navigation et elements associe*/
+nav{
+    display: flex;
+    background-color: white;
+}
+.elements{
+    display: flex;
+}
+.elements li{
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding-top: 4px;
+}
+.elements li:last-child{
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.elements li:last-child:hover{
+    background-color: blue;
+}
+nav h2 span{
+    color: blue;
+}
+/*section principale*/
+.sction1{
+    background-image: linear-gradient(to bottom, blue, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+.sction1 ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sction1 ul li{
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    
+}
+.sction1 ul li:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    text-decoration-color: black;
+}
+.sction1 h2{
+    width: 500px;
+    text-align: center;
+    margin-left: 30%;
+
+}
+.sction1 p{
+    text-align: center;
+}
+.sction1 p input{
+    padding: 10px;
+    border-radius: 20px;
+    width: 500px;
+}
+/*style des cartes*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.container1{
+    width: 1200px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.tenis{
+    width: 350px;
+    margin: 10px 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tenis img{
+    width: 350px;
+    border-radius: 15px;
+}
+.desciption{
+    width: 350px;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    padding: 5px;
+}
+.desciption p{
+    width: 300px;
+    word-wrap: break-word;
+}
+.prix{
+    display: flex;
+    justify-content: space-between;
+}
+.prix button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+.prix button:hover{
+    background-color: rgb(10, 10, 170);
+}
+.prix span{
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+/*footer*/
+footer{
+    background-color: rgb(168, 163, 163);
+    color: black;
+    margin: 0px;
+    padding: 15px;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li {
+    width: 300px;
+    word-wrap: break-word;
+}
+footer ul li span{
+    color: blue;
+}
+/*responsive*/
+@media (max-width:450px){
+    nav{
+        display: flex;
+        flex-direction: column;
+
+    }
+     nav h2{
+        text-align: center;
+    }
+    .elements{
+        width: 100%;
+        display: flex;
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .elements li{
+        margin-left: 0px
+
+    }
+    .sction1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .sction1 ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sction1 h2{
+        margin-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+    .seach{
+        width: 100%;
+        text-align: center;
+    }
+    .sction1 p input{
+        width: 75%;
+    }
+    .container1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
